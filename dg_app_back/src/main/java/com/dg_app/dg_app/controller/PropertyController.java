@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dg_app.dg_app.model.Property;
 import com.dg_app.dg_app.service.IPropertyService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 

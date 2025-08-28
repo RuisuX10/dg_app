@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dg_app.dg_app.model.Owner;
 import com.dg_app.dg_app.service.IOwnerService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,18 +15,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping("api/owner/")
+@RequestMapping("api/owner")
 public class OwnerController {
 
     @Autowired
     private IOwnerService ownerService;
 
-    @GetMapping("/all")
+    @GetMapping("")
     public List<Owner> getAllOwners() {
         return ownerService.getAllOwners();
     }
     
-    @PostMapping("/create")
+    @PostMapping("")
     public Owner createOwner(@RequestBody Owner owner) {
         return ownerService.saveOwner(owner);
     }
