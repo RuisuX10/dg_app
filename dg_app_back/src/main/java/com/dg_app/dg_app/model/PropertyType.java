@@ -22,7 +22,7 @@ import lombok.Setter;
 public class PropertyType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String name;
     @Column(nullable = true)

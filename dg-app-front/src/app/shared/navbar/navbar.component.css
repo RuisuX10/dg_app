@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center; /* centra el contenedor interno */
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 1rem; /* espacio entre botones */
+}

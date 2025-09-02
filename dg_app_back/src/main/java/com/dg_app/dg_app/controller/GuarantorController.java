@@ -1,4 +1,4 @@
-package com.dg_app.dg_app.controller;
+package main.java.com.dg_app.dg_app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

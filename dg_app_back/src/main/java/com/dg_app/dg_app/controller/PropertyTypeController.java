@@ -33,5 +33,17 @@ public class PropertyTypeController {
         return propertyTypeService.savePropertyType(propertyType);
 
     }
+
+    @GetMapping("{id}")
+    public ResponseEntity<PropertyType> getPropertyTypeById(@PathVariable Long id){
+        PropertyType propertyType = propertyTypeService.getPropertyTypeById(id);
+        if (propertyType != null){
+            return ResponseEntity.ok(propertyType);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    
     
 }

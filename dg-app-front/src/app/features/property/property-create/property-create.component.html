@@ -1,0 +1,8 @@
+<form [formGroup]="propertyForm" (ngSubmit)="onSubmit()">
+  <input formControlName="address" placeholder="Dirección" />
+  <input formControlName="rooms" placeholder="Ambientes" type="number" />
+  <input formControlName="price" placeholder="Precio" type="number" />
+  <input formControlName="type" placeholder="Tipo" />
+  <input formControlName="owner" placeholder="Dueño" />
+  <button type="submit">Crear propiedad</button>
+</form>
